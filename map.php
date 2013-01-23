@@ -1,10 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php
+include "config.php";
+?>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Problematische Radwege in Braunschweig</title>
-	<meta name="title" content="Problematische Radwege in Braunschweig" />
-	<meta name="description" content="Wer kennt Stellen in Braunschweig, die für Radfahrer gefährlich/nervig sind? Die Piraten sammeln, bitte hier eintragen." />
+	<title><?php echo($title); ?></title>
+	<meta name="title" content="<?php echo($title); ?>" />
+	<meta name="description" content="<?php echo($description); ?>" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
