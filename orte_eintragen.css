@@ -1,0 +1,58 @@
+#mapdiv {
+	width: 100%;
+	height: 100%;
+}
+
+#maptest {
+	position: absolute;
+	left: 0;		
+	right: 0;		
+/* idealized values from linux
+	bottom: 85px;		
+	top: 169px;		*/
+	bottom: 45px;		
+	top: 159px;		
+	background: #dbd5c8; /* average map color */
+
+	z-index: 2;
+}
+
+#header
+{
+	position: relative;
+	z-index: 3;
+}
+
+.tabbar
+{
+	position: relative;
+	z-index: 3;
+}
+
+#footer
+{
+	z-index: 3;
+}
+
+.olControlPanZoom  {
+	top: 20px !important;
+}
+
+.olControlAttribution 
+{
+	color: white;
+	bottom: 12px !important;
+	text-shadow: 0 0 1px black,0 0 2px black,0 0 3px black;
+}
+
+.olControlAttribution a,
+.olControlAttribution a:link,
+.olControlAttribution a:visited
+{
+	color: white;
+}
+
+.olControlAttribution a:hover
+{
+	color: black;
+}
