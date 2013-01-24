@@ -1,8 +1,12 @@
 <?php
+include "config.php";
+
 function connect()
 {
-	$verbindung = mysql_connect ("localhost","root", "mierdbs") or die("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
-		mysql_select_db("map_test") or die("keine Verbindung möglich");
+	
+	include "config.php";
+	$verbindung = mysql_connect($db_adress,$db_user,$db_password) or die("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+		mysql_select_db($db_name) or die("keine Verbindung möglich");
 	mysql_query("CREATE TABLE IF NOT EXISTS `poi` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Titel` varchar(200) NOT NULL,

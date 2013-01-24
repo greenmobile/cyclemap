@@ -1,3 +1,6 @@
+<?php header ("Content-Type:application/javascript");
+include "config.php"; ?>
+
 	var popup;
     var popup2;
     var feature;
@@ -50,7 +53,7 @@
         var osm = new OpenLayers.Layer.OSM();
         map.addLayer(osm);
         markerarray = new Array();
-        var center_lonlat = (new OpenLayers.LonLat(10.5331, 52.26196)).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
+        var center_lonlat = (new OpenLayers.LonLat(<?php echo($longitude);?>,<?php echo($latitude);?>)).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
         var zoom = 13;
         markers = new OpenLayers.Layer.Markers("Markers");
         map.addLayer(markers);
@@ -71,7 +74,7 @@
     }
 
     function create_edit_popup(popup2, POI_id, lat, lon) {
-        popup2.setContentHTML("<div>" + "<form id=\"formEdit\" action=\"input_text.htm\">" + "<p>Titel:<br>" + "<input name=\"titel_update\" type=\"text\" size=\"26\" maxlength=\"80\" value=\"" + namen[POI_id] + "\">" + "<br/>Beschreibung:<br/>" + "<textarea name=\"beschreibung_update\" id=\"beschreibung_update\" cols=\"35\" rows=\"6\">" + beschreibung[POI_id] + "</textarea>" + "<br/><select name=\"select_typ\" id=\"select_typ_update\" style=\"vertical-align: middle\">"+getPoiTypes()+"</select><br/><input type=\"button\" name=\"Text 2\" value=\"Eintragen\" onclick=\"update_poi(" + lat + "," + lon + "," + id[POI_id] + ");\">" + "</p></form></div>");
+        popup2.setContentHTML("<div>" + "<form id=\"formEdit\" action=script//&quot;input_text.htm/&quot;>" + "<p>Titel:<br>" + "<input name=\"titel_update\" type=\"text\" size=\"26\" maxlength=\"80\" value=\"" + namen[POI_id] + "\">" + "<br/>Beschreibung:<br/>" + "<textarea name=\"beschreibung_update\" id=\"beschreibung_update\" cols=\"35\" rows=\"6\">" + beschreibung[POI_id] + "</textarea>" + "<br/><select name=\"select_typ\" id=\"select_typ_update\" style=\"vertical-align: middle\">"+getPoiTypes()+"</select><br/><input type=\"button\" name=\"Text 2\" value=\"Eintragen\" onclick=\"update_poi(" + lat + "," + lon + "," + id[POI_id] + ");\">" + "</p></form></div>");
         popup2.setBackgroundColor("#FFF");
         popup2.setOpacity(0.9);
         popup2.autoSize = true;
@@ -83,7 +86,7 @@
         var popFeature = new OpenLayers.Feature(osm, lonlat);
         popup = popFeature.createPopup(true);
         popup.setContentHTML("<div>" 
-+ "<form id =\"formCreate\" action=\"input_text.htm\"><p>Titel:<br><input name=\"titel\" type=\"text\" size=\"26\" maxlength=\"80\">" + "<br/>Beschreibung:<br/><textarea name=\"beschreibung\" id=\"beschreibung\" cols=\"35\" rows=\"6\"></textarea><br/><select name=\"select_typ\" id=\"select_typ\" style=\"vertical-align: middle\">"+getPoiTypes()+"</select><br/><input type=\"button\" name=\"Text 2\" value=\"Eintragen\" onclick=\"poi_senden(" + lonlat.lat + "," + lonlat.lon + ");\">" + "</p></form></div>");
++ "<form id =\"formCreate\" action=script//&quot;input_text.htm/&quot;><p>Titel:<br><input name=\"titel\" type=\"text\" size=\"26\" maxlength=\"80\">" + "<br/>Beschreibung:<br/><textarea name=\"beschreibung\" id=\"beschreibung\" cols=\"35\" rows=\"6\"></textarea><br/><select name=\"select_typ\" id=\"select_typ\" style=\"vertical-align: middle\">"+getPoiTypes()+"</select><br/><input type=\"button\" name=\"Text 2\" value=\"Eintragen\" onclick=\"poi_senden(" + lonlat.lat + "," + lonlat.lon + ");\">" + "</p></form></div>");
         popup.setBackgroundColor("#FFF");
         popup.setOpacity(0.9);
         popup.autoSize = true;

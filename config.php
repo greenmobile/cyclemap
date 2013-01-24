@@ -1,16 +1,19 @@
 <?php
 
 $city = "Braunschweig";
-$longitude = "";
-$latitude = "";
+$longitude = "10.5331";
+$latitude = "52.26196";
 
 $titel = "Problematische Radwege in Braunschweig";
 $header_text = "";
-$description = "";
+$description = "Wer kennt Stellen in Braunschweig, die für Radfahrer gefährlich/nervig sind? Die Piraten sammeln, bitte hier eintragen.";
 
-$db_adress = "";
+$db_adress = "localhost";
 $db_user = "";
 $db_password = "";
+$db_name = "";
+
+
 
 
 ?>

@@ -19,7 +19,7 @@ include "config.php";
 	<script type="text/javascript" src="script/jquery-1.5.1.min.js"></script>
 	<script type="text/javascript" src="script/jquery-ui-1.8.13.custom.min.js"></script>
 	<script type="text/javascript" src="script/jquery.watermarkinput.js"></script>
-	<script type="text/javascript" src="script/orte_eintragen.js"></script>
+	<script type="text/javascript" src="orte_eintragen.php"></script>
 </head>
 <body>
 	<div id="bar">
