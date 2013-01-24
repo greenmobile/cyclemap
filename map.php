@@ -5,7 +5,7 @@ include "config.php";
 ?>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title><?php echo($title); ?></title>
+	<title><?php echo($title);?></title>
 	<meta name="title" content="<?php echo($title); ?>" />
 	<meta name="description" content="<?php echo($description); ?>" />
 	<meta name="keywords" content="" />
@@ -23,7 +23,7 @@ include "config.php";
 </head>
 <body>
 	<div id="bar">
-	  	<span><b>Die Braunschweiger Piraten sammeln hier problematische Radwege <span id="counter"></span> in ihrer Stadt (<a href="letter.html" onclick="showpopup(); return false;">Mehr Infos</a>).</b></span>
+	  	<span><b> <?php echo($header_text);?> (<a href="letter.html" onclick="showpopup(); return false;">Mehr Infos</a>). <span id="counter"></span></b></span>
 
 		<span>Doppelklick fügt einen Marker hinzu.</span> 
 
