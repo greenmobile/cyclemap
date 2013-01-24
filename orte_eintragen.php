@@ -122,7 +122,7 @@ include "config.php"; ?>
 			if(beschreibung[i].toLowerCase().indexOf("erledigt") != -1)
 				dir = "mapicons-green";
           
-			feature.data.icon = new OpenLayers.Icon("img/"+dir+"/"+json[i].type + ".png", new OpenLayers.Size(32, 37), new OpenLayers.Pixel(-16, -34));
+			feature.data.icon = new OpenLayers.Icon("images/"+dir+"/"+json[i].type + ".png", new OpenLayers.Size(32, 37), new OpenLayers.Pixel(-16, -34));
             
 
             marker = feature.createMarker();
