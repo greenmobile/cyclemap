@@ -1,8 +1,9 @@
 cyclemap
 ========
 
+Diese Karte dient der Sammlung und Evaluation von problematischen Stellen für Radfahrer. Sie wird unter anderem in Braunschweig genutzt.
 
-
+http://gmino.de/products/cycleproblems/map.html
 
 
 1. Den Ordnerinhalt auf den Server kopieren
