@@ -40,7 +40,7 @@ include "config.php";
 
 		function showpopup()
 		{
-			$("#letterdiv").load("letter.html").dialog({minWidth: 550, title: "Anfrage der BZ", position: [200,60] }); 
+			$("#letterdiv").load("<?php echo($popup_file);?>").dialog({minWidth: 550, title: "<?php echo($popup_title);?>", position: [200,60] }); 
 		}
 	</script>
 </body>

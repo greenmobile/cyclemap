@@ -8,13 +8,13 @@ $titel = "Problematische Radwege in Braunschweig";
 $description = "Wer kennt Stellen in Braunschweig, die für Radfahrer gefährlich/nervig sind? Die Piraten sammeln, bitte hier eintragen.";
 $header_text = "Hier sammeln wir problematische Radwege in ihrer Stadt";
 
+$popup_file = "popup.html";
+$popup_title = "Anfrage der BZ";
 
 $db_adress = "localhost";
 $db_user = "";
 $db_password = "";
 $db_name = "";
-
-
 
 
 ?>
