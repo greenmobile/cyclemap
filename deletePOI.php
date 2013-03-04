@@ -21,7 +21,7 @@ connect();
     }
  
 function saveMethod($id){
-  $abfrage = "DELETE FROM poi where id=$id";
+  $abfrage = "DELETE FROM poi where id=".mysql_real_escape_string($id)."";
   $result = mysql_query($abfrage);
   if(!$result){
   mysql_close();
