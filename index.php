@@ -23,11 +23,13 @@ include "config.php";
 </head>
 <body>
 	<div id="bar">
+    <div style="float: left;">
 	  	<span><b> <?php echo($header_text);?> (<a href="letter.html" onclick="showpopup(); return false;">Mehr Infos</a>). <span id="counter"></span></b></span>
-
 		<span>Doppelklick fügt einen Marker hinzu.</span> 
-
-		<span><b>Straßensuche:</b> <form action="#" onsubmit="search(); return false;"><input name="street" id="street"/><input type="submit" value="suchen" onclick="search();"/></form></span>
+        </div>
+		<div>
+		<span><nobr><b>Straßensuche:</b> <form action="#" onsubmit="search(); return false;"><input name="street" id="street"/><input type="submit" value="suchen" onclick="search();"/></form></nobr></span>
+        </div>
 	</div>
 	<div id="maptest">
 	  	<div id="mapdiv">Javascript muss aktiviert sein.</div> 
